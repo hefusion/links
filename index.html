@@ -10,11 +10,18 @@ body {
 }
 #wrapper {
 	font: 1em/100% "Courier New", Courier, monospace;
-	max-width: 70%;
-	min-width: 60%; /* Will be AT LEAST 40em wide */
-	margin:1em auto auto;
+	width: 70%;
+	min-width: 55%; /* Will be AT LEAST 55% wide */
+	min-width:44em;
 	background: #FFFFFF;
-	padding: 0.3em 0.3em 3%;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+	padding-top: 0.3em;
+	padding-right: 0.3em;
+	padding-bottom: 3%;
+	padding-left: 0.3em;
 }
 #wrapper #header {
 	width: 96%;
@@ -39,7 +46,7 @@ body {
 #wrapper .environment table {
 	border: 2px solid;
 	width: 100%;
-	min-width:60%;
+	min-width:40em;
 }
 #wrapper .environment td {
 	text-align: left;
@@ -86,6 +93,16 @@ body {
 #wrapper #DEV table {
 	border-color: #1D4A6D;
 }
+
+#wrapper #Trello table {
+	border-color: #CC3300;
+}
+
+#wrapper #Trello th{
+	color: #FFFFFF;
+	background-color: #CC3300;
+}
+
 .italic {
 	font-size: 100%;
 	font-style: italic;
@@ -202,9 +219,16 @@ body {
       </tr>
       <tr>
         <td class="col_1">Comments</td>
-        <td><strong>Changes applied via <a href="file://///jhsanclus/sfm/~Oracle Fusion Upgrade/Work Packages (Fusion)/">Work Package</a> only</strong></td>
+        <td><strong>Changes applied via <a href="file://///jhsanclus/sfm/~Oracle Fusion Upgrade/Work Packages (Fusion)/">Work Package</a> only</strong></td></tr>
     </table>
-  </div>
+    </div>
+    
+    <div class="environment" id="Trello">
+    <table>
+    	<tr><th>Trello</th></tr>
+        <tr><td><a href="https://trello.com/b/SgMtO8Tx/he-erp-project-board">Trello Project Board</a></td></tr>
+    </table>
+  	</div>
 </div>
 </body>
 </html>
