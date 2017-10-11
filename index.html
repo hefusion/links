@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SfM Environments</title>
+<title>SfM Fusion Environments</title>
 <style type="text/css">
 <!--
-
-body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png); }
-
+body {
+	background: #99CCFF;
+}
 #wrapper {
 	font: 1em/100% "Courier New", Courier, monospace;
 	width: 66%;
@@ -16,7 +16,6 @@ body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png);
 	background: #FFFFFF;
 	padding: 0.3em 0.3em 5%;
 }
-
 #wrapper #header {
 	width: 96%;
 	margin: 0.8em auto 1em;
@@ -25,56 +24,61 @@ body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png);
 	border: dashed;
 	border-width: 0px 0px 2px 0px;
 }
-
-#wrapper #header #oracle { float: right; }
-	
+#wrapper #header #oracle {
+	float: right;
+}
 #wrapper #header h1 {
 	float: left;
 	padding: 0.45em 0em 0em .3em;
 	margin: 0em;
 }
-
-
 #wrapper .environment {
 	margin:auto auto .5em;
 	width: 92%;
-		 }
-
+}
 #wrapper .environment table {
 	border: 2px solid;
 	width: 100%;
-	min-width:40em;}
-
+	min-width:40em;
+}
 #wrapper .environment td {
 	text-align: left;
-	padding: .1em;}
-	
-#wrapper .environment td.col_1{
+	padding: .1em;
+}
+#wrapper .environment td.col_1 {
 	width: 200px;
 }
-
 #wrapper .environment th {
 	color: #FFFFFF;
 	font-size: 110%;
 	text-align: left;
-	padding: .2em;}
-
+	padding: .2em;
+}
 #wrapper .environment td {
 	font-size: 95%;
-	line-height: 100%;}
-
-#wrapper #GOLD th {background-color: rgb(255,215,0); color: #000000;}
-#wrapper #GOLD table {border-color: rgb(255,215,0);}
-
-#wrapper #MIG th {background-color: rgb(255,192,203); color: #000000;}
-#wrapper #MIG table {border-color: rgb(255,192,203);}
-
+	line-height: 100%;
+}
+#wrapper #GOLD th {
+	background-color: rgb(255,215,0);
+	color: #000000;
+}
+#wrapper #GOLD table {
+	border-color: rgb(255,215,0);
+}
+#wrapper #MIG th {
+	background-color: rgb(255,192,203);
+	color: #000000;
+}
+#wrapper #MIG table {
+	border-color: rgb(255,192,203);
+}
 #wrapper #TEST th {
 	background-color: #1E9606;
 	color: #FFFFFF;
 }
-#wrapper #TEST table {border-color: #1E9606;}
-
+#wrapper #TEST table {
+	border-color: #1E9606;
+}
 #wrapper #DEV th {
 	background-color: #760076;
 	color: #FFFFFF;
@@ -82,48 +86,39 @@ body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png);
 #wrapper #DEV table {
 	border-color: #760076;
 }
-
-
 .style1 {
 	font-size: 100%;
 	font-style: italic;
 }
-
-
 -->
 </style>
 </head>
 <body>
 <div id="wrapper">
-
-<!--	<div id="arrowright"></div>-->
-<div id="header">
-	<img src="Environment URLs Index_files/Oracle_Fusion_2.png" alt="Oracle" name="oracle" id="oracle" />
-  <h1>Fusion Environments</h1></div>
-  
-<div class="environment" id="GOLD">
-  <table>
-    <tr>
-      <th colspan="2">GOLD (config only)</th>
-    </tr>
-    <tr>
-      <td class="col_1">Homepage</td>
-      <td><a href="https://ectm.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
-    </tr>
-              <tr>
-			<td class="col_1">Business Intelligence</td>
-			<td><a href="https://ectm.fs.em3.oraclecloud.com/analytics/" target="_blank">ectm.fs.em3.oraclecloud.com/analytics</a></td>
-	  </tr>
-    
-    
-    <tr>
-      <td class="col_1">Comments</td>
-      <td>No transactions - will be cloned to become Live</td>
-    </tr>
-  </table>
-</div>
-
-<!--<div class="environment" id="MIG">
+  <!--	<div id="arrowright"></div>-->
+  <div id="header">
+    <h1>Fusion Environments</h1>
+  </div>
+  <div class="environment" id="GOLD">
+    <table>
+      <tr>
+        <th colspan="2">GOLD (config only)</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ectm.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ectm.fs.em3.oraclecloud.com/analytics/" target="_blank">ectm.fs.em3.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>No transactions - will be cloned to become Live</td>
+      </tr>
+    </table>
+  </div>
+  <!--<div class="environment" id="MIG">
   <table>
     <tr>
       <th colspan="2">MIGRATION (ECTM-dev1)</th>
@@ -152,45 +147,43 @@ body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png);
     </tr>
   </table>
 </div>-->
-    
-<div class="environment" id="DEV">
-		<table>
-			<tr>
-				<th  colspan="2">DEV (ECTM-test) <span class="style1">Refreshed 05/06/2017</span></th>
-		  </tr>
-			<tr>
-				<td class="col_1">Homepage</td>
-				<td><a href="https://ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
-		  </tr>
-<!--/*			<tr>-->
-			<!--	<td class="col_1">Identity Manager</td>-->
-		<!--		<td><a href="https://ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>-->
-		<!--  </tr>-->
-	<!--		<tr>-->
-		<!--		<td class="col_1">Application Manager</td>-->
-	<!--			<td><a href="https://ectm-test.fs.em3.oraclecloud.com/apm" target="_blank">ectm-test.fs.em3.oraclecloud.com/apm</a></td>-->
-		<!--  </tr>*/-->
-          <tr>
-			<td class="col_1">Business Intelligence</td>
-			<td><a href="https://ectm-test.fs.em3.oraclecloud.com/analytics" target="_blank">ectm-test.fs.em3.oraclecloud.com/analytics</a></td>
-		  </tr>
-			<tr>
-				<td class="col_1">Comments</td>
-				<td>Will be overwritten with TEST at the end of October 17</td>
-		  </tr>
-		</table>
-	</div>
-    
-<div class="environment" id="TEST">
-		<table>
-			<tr>
-				<th colspan="2">TEST (ECVX-test) <span class="style1">Refreshed 13/09/2017</span></th>
-		  </tr>
-			<tr>
-				<td class="col_1">Homepage</td>
-				<td><a href="https://ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
-		  </tr>
-			<!--<tr>
+  <div class="environment" id="DEV">
+    <table>
+      <tr>
+        <th  colspan="2">DEV (ECTM-test) <span class="style1">Refreshed 05/06/2017</span></th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <!--/*			<tr>-->
+      <!--	<td class="col_1">Identity Manager</td>-->
+      <!--		<td><a href="https://ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>-->
+      <!--  </tr>-->
+      <!--		<tr>-->
+      <!--		<td class="col_1">Application Manager</td>-->
+      <!--			<td><a href="https://ectm-test.fs.em3.oraclecloud.com/apm" target="_blank">ectm-test.fs.em3.oraclecloud.com/apm</a></td>-->
+      <!--  </tr>*/-->
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ectm-test.fs.em3.oraclecloud.com/analytics" target="_blank">ectm-test.fs.em3.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>Will be overwritten with TEST at the end of October 17</td>
+      </tr>
+    </table>
+  </div>
+  <div class="environment" id="TEST">
+    <table>
+      <tr>
+        <th colspan="2">TEST (ECVX-test) <span class="style1">Refreshed 13/09/2017</span></th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <!--<tr>
 				<td class="col_1">Identity Manager</td>
 				<td><a href="https://ecvx-test.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ecvx-test.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>
 		  </tr>
@@ -198,21 +191,15 @@ body { background: #99CCFF url(Environment%20URLs%20Index_files/background.png);
 				<td class="col_1">Application Manager</td>
 				<td><a href="https://ecvx-test.fs.em3.oraclecloud.com/apm" target="_blank">ecvx-test.fs.em3.oraclecloud.com/apm</a></td>
 		  </tr>-->
-                    <tr>
-			<td class="col_1">Business Intelligence</td>
-			<td><a href="https://ecvx-test.fs.em3.oraclecloud.com/analytics/" target="_blank">ecvx-test.fs.em3.oraclecloud.com/analytics</a>  <a href="https://ecvx-test.bi.em3.oraclecloud.com/analytics/saw.dll?bipublisherEntry&amp;Action=new&amp;itemType=.xdm">BI New Data Model</a></td>
-		  </tr>
-          
-          
-          
-          
-	  <tr>
-				<td class="col_1">Comments</td>
-		<td>Current Migrate Environment</td>
-         
-		</table>
-	</div>
-
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ecvx-test.fs.em3.oraclecloud.com/analytics/" target="_blank">ecvx-test.fs.em3.oraclecloud.com/analytics</a> <a href="https://ecvx-test.bi.em3.oraclecloud.com/analytics/saw.dll?bipublisherEntry&amp;Action=new&amp;itemType=.xdm">BI New Data Model</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>Current Migrate Environment</td>
+    </table>
+  </div>
 </div>
 </body>
 </html>
