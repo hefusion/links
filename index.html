@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SfM Fusion Environments</title>
+<title>SfM Environments</title>
 <style type="text/css">
 <!--
 body {
@@ -16,7 +16,7 @@ body {
 	background: #FFFFFF;
 	padding: 0.3em 0.3em 5%;
 }
-#wrapper #header {
+#wrapper .header {
 	width: 96%;
 	margin: 0.8em auto 1em;
 	height: 2.8em;
@@ -24,14 +24,13 @@ body {
 	border: dashed;
 	border-width: 0px 0px 2px 0px;
 }
-#wrapper #header #oracle {
-	float: right;
-}
-#wrapper #header h1 {
+
+#wrapper .header h1 {
 	float: left;
 	padding: 0.45em 0em 0em .3em;
 	margin: 0em;
 }
+
 #wrapper .environment {
 	margin:auto auto .5em;
 	width: 92%;
@@ -58,16 +57,55 @@ body {
 	font-size: 95%;
 	line-height: 100%;
 }
+
+#wrapper .hr {
+	background-color: #003162;
+	height: 3px;
+	width: 94%;
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+}
+
+#wrapper #SFM_LIVE table {border-color: rgb(90,117,148);}
+#wrapper #SFM_LIVE table th {background: rgb(90,117,148);}
+#wrapper #SFM_PDEV2 table {border-color: rgb(107,113,99);}
+#wrapper #SFM_PDEV2 table th {background: rgb(107,113,99);}
+#wrapper #SFM_PTEST table {border-color: rgb(156,130,123);}
+#wrapper #SFM_PTEST table th {background: rgb(156,130,123);}
+#wrapper #SFM_PUAT table {border-color: rgb(123,113,140);}
+#wrapper #SFM_PUAT table th {background: rgb(123,113,140);}
+#wrapper #SFM_PTRAIN table {border-color: rgb(99,101,99);}
+#wrapper #SFM_PTRAIN table th {background: rgb(99,101,99);}
+
+#wrapper #G_GOLD table {border-color: #FFD700;}
+#wrapper #G_GOLD table th {background-color: #FFD700; color: #000000;}
+
+#wrapper #G_DEV table {	border-color: #760076;}
+#wrapper #G_DEV th {background-color: #760076;	color: #FFFFFF;}
+#wrapper #G_TEST table {border-color: #1E9606;}
+#wrapper #G_TEST table th {background-color: #1E9606; color: #FFFFFF;}
+#wrapper #G_MIG table {border-color: #002E5F;}
+#wrapper #G_MIG table th {background-color: #002E5F; color: #FFFFFF;}
+
+#wrapper #H_DEV_ORA table {	border-color: #B5B3CE;}
+#wrapper #H_DEV_ORA table th {background-color: #B5B3CE; color: #666666;}
+#wrapper #H_TEST table {	border-color: #B5B3CE;}
+#wrapper #H_TEST table th {background-color: #B5B3CE; color: #666666;}
+#wrapper #H_DEV_HE table {	border-color: #B5B3CE;}
+#wrapper #H_DEV_HE table th {background-color: #B5B3CE; color: #666666;}
+
 #wrapper #GOLD th {
-	background-color: rgb(255,215,0);
+	background-color: #9F8800;
 	color: #000000;
 }
 #wrapper #GOLD table {
-	border-color: rgb(255,215,0);
+	border-color: #9F8800;
 }
 #wrapper #MIG th {
-	background-color: rgb(255,192,203);
-	color: #000000;
+	background-color: #002E5F;
+	color: #FFFFFF;
 }
 #wrapper #MIG table {
 	border-color: rgb(255,192,203);
@@ -95,14 +133,169 @@ body {
 </head>
 <body>
 <div id="wrapper">
-  <!--	<div id="arrowright"></div>-->
-  <div id="header">
-    <h1>Fusion Environments</h1>
+
+   <div class="header" id="gc_header">
+    <h1>PFP Fusion G-Cloud Environments</h1>
+  </div>
+  <div class="environment" id="G_GOLD">
+    <table>
+      <tr>
+        <th colspan="2">GOLD</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td><strong>LIVE DATABASE</strong></td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="hr"></div>
+  
+  
+  <div class="environment" id="G_DEV">
+    <table>
+      <tr>
+        <th colspan="2">ERP DEV</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-test.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-test.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-test.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-test.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>Replacement for ectm-test</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="environment" id="G_TEST">
+    <table>
+      <tr>
+        <th colspan="2">ERP TEST</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-dev4.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-dev4.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-dev4.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-dev.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">PaaS</td>
+        <td><a href="https://141.145.41.57/apex/PDB1/f?p=123" target="_blank">141.145.41.57/apex/PDB1/f?p=123</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>Replacement for ecvx-test</td>
+      </tr>
+    </table>
+  </div>
+  
+   
+  <div class="environment" id="G_MIG">
+    <table>
+      <tr>
+        <th colspan="2">ERP MIG (UAT)</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-dev6.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-dev6.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-dev6.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-dev6.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>New Environment</td>
+      </tr>
+    </table>
+  </div>
+  
+  <div class="hr"></div>
+  
+  <div class="environment" id="H_DEV_ORA">
+    <table>
+      <tr>
+        <th colspan="2">HCM DEV (ORA)</th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-dev2.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-dev2.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-dev2.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-dev2.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>copy of efoz-test. Will become HCM Dev.</td>
+      </tr>
+    </table>
+  </div>
+  
+    <div class="environment" id="H_TEST">
+    <table>
+      <tr>
+        <th colspan="2">HCM TEST =&gt; <strong>HE Test</strong></th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-dev3.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-dev3.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-dev3.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-dev3.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>copy of eflv-test. <strong>Will become HE Test</strong>.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="environment" id="H_DEV_HE">
+    <table>
+      <tr>
+        <th colspan="2">HCM DEV(HE) =&gt; <strong>HE PREPROD</strong></th>
+      </tr>
+      <tr>
+        <td class="col_1">Homepage</td>
+        <td><a href="https://ehcu-dev1.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ehcu-dev1.fs.em1.ukg.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Business Intelligence</td>
+        <td><a href="https://ehcu-dev1.bi.em1.ukg.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ehcu-dev1.bi.em1.ukg.oraclecloud.com/analytics</a></td>
+      </tr>
+      <tr>
+        <td class="col_1">Comments</td>
+        <td>copy of ectm-dev1. <strong>Will become HE PREPROD</strong>.</td>
+      </tr>
+    </table>
+  </div>
+
+  
+
+  <div class="header" id="og_header">
+  	   	<h1>Oracle Cloud Fusion Environments </h1>
   </div>
   <div class="environment" id="GOLD">
     <table>
       <tr>
-        <th colspan="2">GOLD (config only)</th>
+        <th colspan="2">OLD GOLD (config only)</th>
       </tr>
       <tr>
         <td class="col_1">Homepage</td>
@@ -110,7 +303,7 @@ body {
       </tr>
       <tr>
         <td class="col_1">Business Intelligence</td>
-        <td><a href="https://ectm.fs.em3.oraclecloud.com/analytics/" target="_blank">ectm.fs.em3.oraclecloud.com/analytics</a></td>
+        <td><a href="https://ectm.bi.em3.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ectm.bi.em3.oraclecloud.com/analytics</a></td>
       </tr>
       <tr>
         <td class="col_1">Comments</td>
@@ -118,55 +311,18 @@ body {
       </tr>
     </table>
   </div>
-  <!--<div class="environment" id="MIG">
-  <table>
-    <tr>
-      <th colspan="2">MIGRATION (ECTM-dev1)</th>
-    </tr>
-    <tr>
-      <td class="col_1">Homepage</td>
-      <td><a href="https://ectm-dev1.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm-dev1.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
-    </tr>
-    <tr>
-      <td class="col_1">Identity Manager</td>
-      <td><a href="https://ectm-dev1.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ectm-dev1.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>
-    </tr>
-    <tr>
-      <td class="col_1">Application Manager</td>
-      <td><a href="https://ectm-dev1.fs.em3.oraclecloud.com/apm" target="_blank">ectm-dev1.fs.em3.oraclecloud.com/apm</a></td>
-    </tr>
-              <tr>
-			<td class="col_1">Business Intelligence</td>
-			<td><a href="https://ectm-dev1.fs.em3.oraclecloud.com/analytics/" target="_blank">ectm-dev1.fs.em3.oraclecloud.com/analytics</a></td>
-		  </tr>
-    
-    
-    <tr>
-      <td class="col_1">Comments</td>
-      <td>Data Migration</td>
-    </tr>
-  </table>
-</div>-->
   <div class="environment" id="DEV">
     <table>
       <tr>
-        <th  colspan="2">DEV (ECTM-test) <span class="style1">Refreshed 05/06/2017</span></th>
+        <th  colspan="2">DEV (ECTM-test) <span class="style1">to be scrapped</span></th>
       </tr>
       <tr>
         <td class="col_1">Homepage</td>
         <td><a href="https://ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ectm-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
       </tr>
-      <!--/*			<tr>-->
-      <!--	<td class="col_1">Identity Manager</td>-->
-      <!--		<td><a href="https://ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ectm-test.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>-->
-      <!--  </tr>-->
-      <!--		<tr>-->
-      <!--		<td class="col_1">Application Manager</td>-->
-      <!--			<td><a href="https://ectm-test.fs.em3.oraclecloud.com/apm" target="_blank">ectm-test.fs.em3.oraclecloud.com/apm</a></td>-->
-      <!--  </tr>*/-->
       <tr>
         <td class="col_1">Business Intelligence</td>
-        <td><a href="https://ectm-test.fs.em3.oraclecloud.com/analytics" target="_blank">ectm-test.fs.em3.oraclecloud.com/analytics</a></td>
+        <td><a href="https://ectm-test.bi.em3.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ectm-test.bi.em3.oraclecloud.com/analytics</a></td>
       </tr>
       <tr>
         <td class="col_1">Comments</td>
@@ -177,27 +333,19 @@ body {
   <div class="environment" id="TEST">
     <table>
       <tr>
-        <th colspan="2">TEST (ECVX-test) <span class="style1">Refreshed 13/09/2017</span></th>
+        <th colspan="2">SIT2 Testing - TEST (ECVX-test) <span class="style1">to be scrapped</span></th>
       </tr>
       <tr>
         <td class="col_1">Homepage</td>
         <td><a href="https://ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome" target="_blank">ecvx-test.fs.em3.oraclecloud.com/homePage/faces/FuseWelcome</a></td>
       </tr>
-      <!--<tr>
-				<td class="col_1">Identity Manager</td>
-				<td><a href="https://ecvx-test.login.em3.oraclecloud.com/admin/faces/pages/Admin.jspx" target="_blank">ecvx-test.login.em3.oraclecloud.com/admin/faces/pages/Admin</a></td>
-		  </tr>
-			<tr>
-				<td class="col_1">Application Manager</td>
-				<td><a href="https://ecvx-test.fs.em3.oraclecloud.com/apm" target="_blank">ecvx-test.fs.em3.oraclecloud.com/apm</a></td>
-		  </tr>-->
       <tr>
         <td class="col_1">Business Intelligence</td>
-        <td><a href="https://ecvx-test.fs.em3.oraclecloud.com/analytics/" target="_blank">ecvx-test.fs.em3.oraclecloud.com/analytics</a> <a href="https://ecvx-test.bi.em3.oraclecloud.com/analytics/saw.dll?bipublisherEntry&amp;Action=new&amp;itemType=.xdm">BI New Data Model</a></td>
+        <td><a href="https://ecvx-test.bi.em3.oraclecloud.com/analytics/saw.dll?catalog" target="_blank">ecvx-test.bi.em3.oraclecloud.com/analytics</a> <a href="https://ecvx-test.bi.em3.oraclecloud.com/analytics/saw.dll?bipublisherEntry&amp;Action=new&amp;itemType=.xdm">BI New Data Model</a></td>
       </tr>
       <tr>
         <td class="col_1">Comments</td>
-        <td>Current Migrate Environment</td>
+        <td>SIT2 Environment - cloned from MIG</td>
     </table>
   </div>
 </div>
